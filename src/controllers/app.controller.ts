@@ -14,8 +14,8 @@ export class AppController {
   postArticle(@Body() data: any, @UploadedFiles() files: { images: Express.Multer.File[] }): Promise<any> {
     console.log("DATA: ", data)
     console.log("files: ", files.images)
-    // return this.appService.postArticle(data, files.images);
-    return Promise.resolve({ result: "ahihi" })
+    return this.appService.postArticle(data, files.images);
+    // return Promise.resolve({ result: "ahihi" })
   }
 
 
