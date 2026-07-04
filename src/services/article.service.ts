@@ -20,6 +20,9 @@ export class ArticleService {
                 article_html: data.resultData.article_html,
                 image_url: JSON.stringify(data.image_urls),
                 faqs: JSON.stringify(data.resultData.faqs),
+            },
+            select: {
+                slug: true,
             }
         })
     }
