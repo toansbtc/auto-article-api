@@ -1,5 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Post } from "@nestjs/common";
-import { ArticleService } from "src/services/article.service";
+import { ArticleService } from "../services/article.service";
 
 @Controller()
 export class ArticleController {
